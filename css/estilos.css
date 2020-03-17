@@ -152,7 +152,7 @@ h4 { color: #b35900; text-transform: uppercase; padding-bottom: 3px; margin-bott
 	@media only screen and (max-width: 425px)  {
 		/*Article Exposições/Acervo/Fotos
 		******************************************/
-		article.lado-a-lado { width: 80%; margin: 0 auto; text-align: center; }
+		article.lado-a-lado { width: 95%; margin: 0 auto; text-align: center; }
 		article.lado-a-lado img { width: 80%; margin-bottom: 15px; }
 		h3.titleArticle { font-size: 1.1em; text-align: center; padding: 3px 0; color: #fff; background-color: #98341b; }
 		/*Fim Article Exposições/Acervo/Fotos*****/
