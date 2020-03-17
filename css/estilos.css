@@ -1,0 +1,426 @@
+/*Formatação padrão
+**********************************************/
+* { margin: 0; padding: 0; }
+body { font: 1em Arial, Helvetica, sans-serif; }
+#container { width: 100%; }
+a:link, a:active, a:visited { color: #c34322; text-decoration: none; }
+a:hover { color: #4d4d00; }
+h3 { color: #fff; font-size: 1.0em; margin-bottom: 15px; text-transform: uppercase; background-color: #c34322; padding: 5px; text-align: center; }
+h3.semBold>a { color: #fff; }
+h4 { color: #b35900; text-transform: uppercase; padding-bottom: 3px; margin-bottom: 0; }
+/*Fim Formatação padrão***********************/
+
+
+/*VERSÃO MOBILE
+********************************************
+********************************************/
+@media only screen and (max-width: 1024px) {
+	#postagens {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	/*logo
+	*****************************************/
+	#logo h1 {
+		text-indent: -9999px;
+		float: right;
+	}
+
+	#imgLogo {
+		width: 120px;
+		position: relative;
+		float: right;
+		margin: 20px;
+	}
+	/*Fim Logo*******************************/
+
+	.navPc { /*Desativar menu PC*/
+		display: none;
+	}
+
+	aside {/*Desativar aside*/
+		display: none;
+	}
+
+	/*Menu mobile
+	*****************************************/
+	header {
+		width: 100%;
+		height: 70px;
+		position: fixed;
+		top: 0;
+		background-color: rgba(255, 255, 255, 0.9);
+		box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+	}
+
+	nav.navMobile {
+		position: absolute;
+		top: 0;
+		width: 40%;
+	}
+
+	img#btMenu {
+		margin: 20px;
+		width: 30px;
+	}
+
+	div#divUl {
+		display: none;
+		position: relative;
+		top: -13.6px;
+		width: 100%;
+		height: 100vh;
+		padding-top: 20px;
+		background-color: rgba(255, 255, 255, 1);
+	}
+
+
+	#divUl a {
+		/*background-color: rgba(255, 255, 255, 0.9);*/
+		padding: 20px 0;
+		text-align: center;
+		display: block;
+		position: relative;
+		top: -2px;
+		width: 100%;
+		color: #c34322;
+		box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+	}
+	/*Fim Menu Mobile*************************/
+
+	/*Conteúdo
+	******************************************/
+
+	/*Capa
+	******************************************/
+	#capa1 { display: block; background: url(../img/capa1.jpg) no-repeat bottom; width: 100%; height: 319px; margin: 70px auto 0 auto;background-size: cover; }
+	#capa2 { display: block; background: url(../img/capa2.jpg) no-repeat center; width: 100%; height: 319px; margin: 70px auto 0 auto;background-size: cover; }
+	#capa3 { display: block; background: url(../img/capa3.jpg) no-repeat center; width: 100%; height: 319px; margin: 70px auto 0 auto;background-size: cover; }
+	#capa4 { display: block; background: url(../img/capa4.jpg) no-repeat center; width: 100%; height: 319px; margin: 70px auto 0 auto;background-size: cover; }
+	#capa5 { display: block; background: url(../img/capa5.jpg) no-repeat center; width: 100%; height: 319px; margin: 70px auto 0 auto;background-size: cover; }
+	#capa6 { display: block; background: url(../img/capa.jpg) no-repeat bottom; width: 100%; height: 319px; margin: 70px auto 0 auto;background-size: cover; }
+	/*Fim Capa********************************/
+
+	.text-center { /*Centralizar-texto*/
+		text-align: center;
+		margin-top: 5px;
+	}
+
+	/*Articles do Index
+	************************/
+	article iframe {
+		display: block;	
+		margin: 0 auto;
+		border: 1px solid;
+		height: 180px;
+	}
+
+	article #listExp {
+		padding: 0 0 0 30px;
+		color: #c34322;
+	}
+
+	/*Fim Articles do Index
+	************************/
+
+	/*Visita
+	************************/
+	.visitaText {
+		display: block;
+		font-size: 1em;
+		color: #c34322;
+		margin-bottom: 10px;
+		text-align: justify;
+	}
+
+	.visitaTextBold {
+		font-weight: bold;
+		color: #98341b;
+	}
+	/*Fim Visita************/
+	
+
+	/*sections
+	************************/
+	section#visita { padding: 10px 27px 27px 27px; margin: 10px auto 0 auto; max-width: 790px; }/*Contato*/
+	/*Fim sections**********/
+
+	/*VERSÃO APENAS CELULAR
+	********************************************
+	********************************************/
+	@media only screen and (max-width: 425px)  {
+		/*Article Exposições/Acervo/Fotos
+		******************************************/
+		article.lado-a-lado { width: 80%; margin: 0 auto; text-align: center; }
+		article.lado-a-lado img { width: 80%; margin-bottom: 15px; }
+		h3.titleArticle { font-size: 1.1em; text-align: center; padding: 3px 0; color: #fff; background-color: #98341b; }
+		/*Fim Article Exposições/Acervo/Fotos*****/
+
+		/*Tamanho da abertura do menu lateral
+		***************************************/
+		nav.navMobile { position: absolute; top: 0; width: 55%; }
+		/*Fim Tamanho da abertura do menu lateral*/
+
+		article#historia p, article#historia a {
+			text-align: justify;
+			padding: 10px 20px;
+		}
+
+		h3.semBold { background-color: white; color: #c34322; }
+		h3.semBold>a { color: #c34322; }
+	}
+	/*FIM VERSÃO APENAS CELULAR
+	********************************************
+	********************************************/
+		/*VERSÃO APENAS TABLET
+	********************************************
+	********************************************/
+	@media only screen and (min-width: 426px) and (max-width: 1024px) {
+		/*Article Exposições/Acervo/Fotos
+		******************************************/
+		article.lado-a-lado { width: 200px; margin: 0 auto; text-align: center; }
+		article.lado-a-lado img { width: 200px; margin-bottom: 15px; }
+		h3.titleArticle { font-size: 1.1em; text-align: center; padding: 3px 0; color: #fff; background-color: #98341b; }
+		.flex { display: flex; flex-wrap: wrap; margin: 0 auto; justify-content: space-around; max-width: 790px; margin-bottom: 10px; }
+		/*Fim Article Exposições/Acervo/Fotos*****/
+
+		article#historia {
+		text-align: justify;
+		padding: 10px 20px;
+	}
+
+		/*box do index
+		***************************/
+		article#video iframe { width: 100%; height: 200px; }
+		article#video { margin-top: 10px; }
+		article#mapa iframe { width: 100%; height: 230px; }
+		article#mapa { margin: 0 20px; }
+		article#historia { width: 300px; }
+		article#exposicoes { width: 300px; }
+		/*Fim box do index*********/
+
+		/*Box dos videos
+		******************************************/
+		article.boxVideo { width: 300px; margin: 0 20px 10px 20px; }
+		article.boxVideo iframe { width: 100%; height: 200px; }
+		/*Fim Box dos videos**********************/
+
+		/*Tamanho da abertura do menu lateral
+		***************************************/
+		nav.navMobile { position: absolute; top: 0; width: 45%; }
+		/*Fim Tamanho da abertura do menu lateral*/
+	}
+	@media only screen and (min-width: 769px) and (max-width: 1024px) {
+		/*Tamanho da abertura do menu lateral
+		***************************************/
+		nav.navMobile { position: absolute; top: 0; width: 28%; }
+		/*Fim Tamanho da abertura do menu lateral*/
+	}
+	/*FIM VERSÃO APENAS TABLET
+	********************************************
+	********************************************/
+
+	/*Fim Conteúdo****************************/
+
+	/*Footer
+	******************************************/
+	footer {
+	clear: both;
+	padding: 20px 0 30px 0;
+	text-align: center;
+	background: url(../img/fundo-rodape.png) no-repeat center top;
+	}
+
+	footer>.listFooter {
+		display: none;
+	}
+
+	footer p {
+		font-size: .9em;
+	}
+	/*Fim Footer******************************/
+
+}
+
+@media only screen and (min-width: 1025px) {
+	body { background: #faf2ec url(../img/fundo.png) repeat-x; }
+	h3.titleArticle { display: none; }
+
+	#container {
+		width: 1045px;
+		margin: 0 auto;
+	}
+
+	/*Logo
+	*******************************************/
+	#logo h1 {
+		float: left;
+		text-indent: -9999px;
+	}
+
+	#imgLogo {
+		width: 190px;
+		position: relative;
+		top: 20px;
+	}
+	/*Fim Logo*********************************/
+
+
+	/*Capa
+	----------------------------------------------*/
+	#capa1 { display: block; background: url(../img/capa1.jpg) no-repeat bottom; height: 319px; margin: 0 auto;background-size: cover; }
+	#capa2 { display: block; background: url(../img/capa2.jpg) no-repeat center; height: 319px; margin: 0 auto;background-size: cover; }
+	#capa3 { display: block; background: url(../img/capa3.jpg) no-repeat center; height: 319px; margin: 0 auto;background-size: cover; }
+	#capa4 { display: block; background: url(../img/capa4.jpg) no-repeat center; height: 319px; margin: 0 auto;background-size: cover; }
+	#capa5 { display: block; background: url(../img/capa5.jpg) no-repeat center; height: 319px; margin: 0 auto 10px auto;background-size: cover; }
+	#capa6 { display: block; background: url(../img/capa.jpg) no-repeat bottom; height: 319px; margin: 0 auto;background-size: cover; }
+
+
+	/*Barra de navegação Computador
+	----------------------------------------------*/
+	nav ul {
+		list-style-type: none;
+		margin: 15px;
+		float: right;
+	}
+
+	nav ul li {
+		float: left;
+	}
+
+	nav ul li a:link {
+		display: block;
+		margin-right: 25px;
+		font-size: .8em;
+		position: relative;
+		top: -30px;
+		text-transform: uppercase;
+	}
+
+	nav ul li a:hover {
+		border-bottom: 1px solid #4d4d00;
+	}
+
+	/*Barra de navegação Mobile
+	----------------------------------------------*/
+	nav.navMobile {
+		display: none;
+	}
+
+	div#divUl {
+		display: none;
+	}
+
+	/*Principal
+	----------------------------------------------*/
+	#conteudo {
+		width: 700px;
+		float: left;
+		margin-bottom: 20px;
+	}
+
+	#postagens {
+		margin: 0 20px;
+	}
+
+	aside {
+		width: 330px;
+		float: right;
+		background: #ebe7dd;
+		padding-bottom: 30px;
+		margin-bottom: 20px;
+	}
+
+	span#text-sobremuseu {
+		font-family: 'Amatic SC', cursive;
+		font-size: 1.5em;
+		line-height: 31px;
+		text-transform: uppercase;
+		display: inline-block;
+		text-align: justify;
+		color: #fff;
+	}
+
+	section#sobremuseu { width: 330px; height: 320px; background-color: #691a00; padding: 20px; box-sizing: border-box; margin-bottom: 10px; }
+
+	section#visita { background: #cdc8b1; padding: 10px 27px 27px 27px; margin-top: 10px; margin-bottom: 10px; }
+
+	section#galeria a {	display: block;	background: url(../img/fundo-foto.png) no-repeat; float: left; padding: 17px 15px; margin: 10px 0 0 20px; }
+
+	section#galeria img { margin-left: 2px; margin-top: 3px; }
+
+	section#galeria h4 { margin-left: 25px; }
+
+	article#video {	width: 310px; float: left; margin: 15px 0 0 0; }
+
+	article#mapa { width: 310px; float: left; margin: 15px 0 0 0; }
+
+	article#exposicoes { float: right; width: 310px; margin: 15px 0; }
+
+	article#historia { float: right; width: 310px; margin: 15px 0 0 37px; text-align: justify; }
+
+
+
+	article #listExp {
+		padding: 0 0 0 30px;
+		color: #c34322;
+	}
+
+	/*Formatação lado a lado
+	----------------------------------------------*/
+	#postagens-sem-margem {
+		margin: 0 -20px;
+	}
+
+	.flex {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.lado-a-lado {
+		margin: 10px 0;
+		background-color: #ebe7dd;
+		width: 210px;
+		padding: 5px 5px 0px 5px;
+		box-sizing: border-box;
+	}
+
+	.boxVideo {
+		width: 310px;
+		display: block;
+	}
+
+	/*Faça uma visita
+	----------------------------------------------*/
+	.visitaText {
+		display: block;
+		font-size: 1.1em;
+		color: #c34322;
+		margin-bottom: 10px;
+	}
+
+	.visitaTextBold {
+		font-weight: bold;
+		color: #98341b;
+	}
+
+	/*Rodapé
+	----------------------------------------------*/
+	footer {
+		clear: both;
+		padding: 20px 0 30px 0;
+		text-align: center;
+		background: url(../img/fundo-rodape.png) no-repeat center top;
+	}
+
+	footer>p a {
+		padding: 2px 10px;
+	}
+
+	footer>.listFooter {
+		margin-bottom: 20px;
+	}
+
+}
