@@ -196,10 +196,8 @@ h4 { color: #b35900; text-transform: uppercase; padding-bottom: 3px; margin-bott
 		article#video { margin-top: 10px; }
 		article#mapa iframe { width: 100%;}
 		article#mapa { margin: 0 20px; }
-		article#historia iframe { width: 100%; }
-		article#historia {  margin: 0 20px; }
-		article#exposicoes { width: 100%; }
-		article#exposicoes { margin: 0 20px; }
+		article#historia iframe { width: 300px; }
+		article#exposicoes { width: 300px; }
 		/*Fim box do index*********/
 
 		/*Box dos videos
