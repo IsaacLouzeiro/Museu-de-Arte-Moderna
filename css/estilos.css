@@ -193,9 +193,9 @@ h4 { color: #b35900; text-transform: uppercase; padding-bottom: 3px; margin-bott
 		/*box do index
 		***************************/
 		article#video iframe { width: 100%; }
-		article#video { margin-top: 10px; }
+		article#video { width: 300px; margin-top: 10px; }
 		article#mapa iframe { width: 100%;}
-		article#mapa { margin: 0 20px; }
+		article#mapa { width: 300px; margin: 0 20px; }
 		article#historia { width: 300px; }
 		article#exposicoes { width: 300px; }
 		/*Fim box do index*********/
