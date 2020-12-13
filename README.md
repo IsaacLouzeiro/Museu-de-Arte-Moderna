@@ -13,4 +13,4 @@ Foi utilizado HTML5, CSS3 e JS
 
 Was used HTML5, CSS3 and JS
 
-Website: https://isaaclouzeiro.github.io/Museu-de-Arte-Moderna/index.html
+Website: https://isaaclouzeiro.github.io/Museu-de-Arte-Moderna/
